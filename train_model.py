@@ -11,9 +11,8 @@ import joblib
 # CONFIG
 # =========================
 DATASET_PATH = "dataset"
-CATEGORIES = ["apple", "banana"]
+CATEGORIES = ["apple", "grapes","mango","pineapple","banana","avocado","pear","cherry","coconut"]
 IMG_SIZE = 64
-
 data = []
 labels = []
 
