@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Gesture Recognition</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; background: #111; color: white; }
+        h1   { color: #FFD700; }
+        .btn { padding: 15px 40px; margin: 10px; font-size: 18px;
+               border: none; border-radius: 8px; cursor: pointer; }
+        .start { background: #00C853; color: white; }
+        .stop  { background: #D50000; color: white; }
+        .msg   { margin-top: 20px; font-size: 16px; color: #00E676; }
+    </style>
+</head>
+<body>
+    <h1>🍎 Fruit Gesture Recognition</h1>
+    <p>Click Start to open the MediaPipe camera on your desktop.</p>
+
+    <a href="/start-camera/">
+        <button class="btn start">▶ Start Camera</button>
+    </a>
+
+    <a href="/stop-camera/">
+        <button class="btn stop">■ Stop Camera</button>
+    </a>
+
+    {% if message %}
+        <p class="msg">{{ message }}</p>
+    {% endif %}
+</body>
+</html>
