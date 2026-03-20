@@ -1,7 +1,8 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('detector.urls')),
+    path('', views.index, name='index'),
+    path('start-camera/', views.start_camera, name='start_camera'),
+    path('stop-camera/', views.stop_camera, name='stop_camera'),
 ]
